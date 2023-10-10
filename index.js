@@ -70,7 +70,7 @@ function previsaoTempo() {
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=805afb8f2f4ebcce78a01ca167816932&" + "lang=pt_br&units=metric").then(data => data.json()).then(data => {
     
     
-    fetch("http://api.openweathermap.org/data/2.5/forecast/?q=teresina&appid=805afb8f2f4ebcce78a01ca167816932&lang=pt_br& units=metric").then(data => data.json()).then(data => {
+   /* fetch("http://api.openweathermap.org/data/2.5/forecast/?q=teresina&appid=805afb8f2f4ebcce78a01ca167816932&lang=pt_br").then(data => data.json()).then(data => {
         console.log("\n\n\n\n\n\n")
         console.log(data)
         console.log("dia: " + data.list[0].dt_txt)
@@ -80,6 +80,8 @@ function previsaoTempo() {
         
         
     })
+    */
+    
     
     let sunrise = data.sys.sunrise
     let formatacao_sunrise = new Date(sunrise * 1000).toLocaleTimeString()
@@ -101,7 +103,9 @@ function previsaoTempo() {
     console.log("por do sol: " + formatacao_sunset)
     console.log("latitude: " + data.coord.lat)
     console.log("longitude: " + data.coord.lon)
+    
     rl.close()
+    
 })
         
     })
@@ -111,6 +115,3 @@ function previsaoTempo() {
 
 
 //805afb8f2f4ebcce78a01ca167816932
-/*fetch("https://api.openweathermap.org/data/2.5/weather?q=teresina&appid=805afb8f2f4ebcce78a01ca167816932&lang=pt_br").then(data => data.json()).then(data => {
-    console.log(data)
-})*/
