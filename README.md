@@ -6,7 +6,7 @@ Api previsão do tempo: [OpenWeatherMap](https://openweathermap.org/)
 Api CEP: [ViaCep](https://viacep.com.br/)
 
 
-Como usar:
+## Como usar:
 
 
 No [Termux](https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_universal.apk) android:
